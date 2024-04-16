@@ -1,15 +1,15 @@
 import { Soldier } from "./Soldier";
 
 export class Viking extends Soldier{
-    name : string;
+  name : string;
     constructor(name: string, health: number, strength:number){
         super(health, strength);
         this.name = name;
     }
 
-    attack(){
-        return this.strength;
-    }
+    // attack(){
+    //     return this.strength;
+    // }
 
     receiveDamage(damage: number) {
         this.health -= damage; 

@@ -5,9 +5,9 @@ export class Saxon extends Soldier{
     constructor(health:number, strength: number){
         super(health,strength);
     }
-    attack(){
-        return this.strength;
-    }
+    // attack(){
+    //     return this.strength;
+    // }
     receiveDamage(damage: number){
         this.health = this.health - damage;
         if (this.health > 0){
